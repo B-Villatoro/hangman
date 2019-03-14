@@ -5,19 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
 </head>
 <body>
-    <h1>The Hangman</h1>
-    <h2>Guess the word!</h2>
-    <h2 id="pickedword">  Guessed word</h2><br>
-    <h2 id="wrongletter">Guessed Letters</h2><br>
-    <h2>Guesses left<h2 id="guessleft"></h2></h2>
-    <h2 id="guesshere">_ _ _ _ _</h2>
-    <h2 id="correctguess"></h2><br>
-    <h2>Amount of Losses :<p id="losses">Losses</p></h2>
+    <header class="container-fluid">
+        <div class="row">
+            <div class='col-12 text-align-center'>Game!</div>
+        </div>
+    </header>
+    <div class="container ">
+        <div class ="row ">
+        <div class="col-3"></div>
+        <div class="col-5 justify-content-center">
+    
+           <div class="">
+           <h1>The Hangman</h1>
+           <h2>Guess the word!</h2>
+           <!-- <h2 id="pickedword">  Guessed word</h2> -->
+           <h2 id="wrongletter">Guessed Letters</h2><br>
+           <h2>Guesses left<h2 id="guessleft"></h2></h2>
+           <h2 id="guesshere">_ _ _ _ _</h2>
+           <h2 id="correctguess"></h2><br>
 
+           <h2>Wins : <h2 id="wincounter">0</h2></h2>
+           <h2>Losses : <p id="losses">0</p></h2>
+            </div>
+        </div>
+        </div>
+    </div>
 
-
-    <script type="text/javascript" src="assets/hangman.js"></script>
+    <script type="text/javascript" src="assets/javascript/hangman.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
