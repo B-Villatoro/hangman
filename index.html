@@ -5,38 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    
 
 </head>
 <body>
-    <header class="container">
-        <div class="row">
-            <div class="col-3"></div>
-            <div class='col-5' style="font-size: 4em">Hangman!</div>
-        </div>
-    </header>
-    <div class="container ">
-        <div class ="row ">
-        <div class="col-3"></div>
-        <div class="col-5 ">
-    
-           <div class="container">
-            <br>
-           <h2>Guess the word!</h2>
-           <!-- <h2 id="pickedword">  Guessed word</h2> -->
-           
-           <h2>Guesses left<h2 id="guessleft"></h2></h2>
-           <h2 id="guesshere">_ _ _ _ _</h2>
-           <h2>Wrong Guesses</h2><h2 id="wrongletter">Guessed Letters</h2><h2></h2>
-           <h2 id="correctguess"></h2><br>
 
-           <h2>Wins : <h2 id="wincounter">0</h2></h2>
-           <h2>Losses : <p id="losses">0</p></h2>
+    <div id="bigboldbody" class="containerfluid p-4">
+        <!-- header block -->
+        <header class="">
+            <div class="row ">
+                <div class="col-4"></div>
+                <div id="headerDiv" class="col-4 py-2 text-center rounded ">Hangman!</div>
+                <div class="col-4"></div>   
             </div>
+        </header>
+    <!-- Maincontent block -->
+        <div class="container ">
+            <div class ="row ">
+            <div class="col-4"></div>
+            <div id="mainContent" class="col-4 pl-5 pr-auto mt-5 rounded">
+            <h2>Guess the word!</h2>
+            <h2>Guesses left<h2 id="guessleft"></h2></h2>
+            <h2 id="guesshere">_ _ _ _ _</h2>
+            <h2>Wrong Guesses<br><span id="wrongletter">guesses</span></h2>
+            <h2 id="correctguess"></h2><br>
+            <h2>Wins : <h2 id="wincounter">0</h2></h2>
+            <h2>Losses : <p id="losses">0</p></h2>
+            </div>
+            <div class="col-4"></div>
+
         </div>
-        </div>
-    </div>
+
+    </div><!--end big block-->
 
     <script type="text/javascript" src="assets/javascript/hangman.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

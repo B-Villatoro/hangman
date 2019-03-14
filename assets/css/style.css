@@ -1,0 +1,16 @@
+
+
+
+#headerDiv{
+    background-color: rgba(16, 144, 148, 0.623);
+    font-size: 5rem;
+}
+
+#mainContent{
+    background-color: rgba(100,20,155,.6);
+}
+
+body{
+    background-image: url("https://target.scene7.com/is/image/Target/GUEST_cc032d78-7158-4818-9801-0489f5e50bf6?wid=488&hei=488&fmt=pjpeg");
+    
+}

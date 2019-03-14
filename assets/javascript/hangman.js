@@ -1,5 +1,5 @@
 // list of possible words
-const WORDS_ARRAY = ["taco","pizza","burger","waffle","hotdot","bigman","java"]
+const WORDS_ARRAY = ["taco","pizza","burger","waffle","hotdog","bigman","java","rubber","duck","rubberducky"]
 let pickedword = WORDS_ARRAY[Math.floor(Math.random()*WORDS_ARRAY.length)]
 let guessesleft = 10;
 let losscounter = 0;
@@ -28,7 +28,7 @@ let pushToUnderArray = function(){
     makeUnderscore();
     
 document.getElementById("guesshere").textContent = underArray.join(" ");
-document.getElementById("wrongletter").textContent = wrongGuessList;
+// document.getElementById("wrongletter").textContent = "-";
 document.getElementById("guessleft").textContent = guessesleft;
 // document.getElementById("pickedword").textContent = pickedword;
 
